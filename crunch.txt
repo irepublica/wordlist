@@ -1,0 +1,8 @@
+# common command
+crunch [min] [max] [characters] -t [pattern] -o [filename]
+
+# no repeat 
+-p
+
+# @ can be any characters listed
+-t a@@@@b 
