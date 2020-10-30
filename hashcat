@@ -1,0 +1,5 @@
+# identify hash type
+hashcat -h | grep \[first 2 or 3 letters]
+
+# save hash to a file 'password' and brute force with rockyou.txt
+hashcat -m [hash type number, e.g. 1800] password rockyou.txt --force
